@@ -30,3 +30,13 @@ We then describe our results clearly, concisely, and in a logical order. We use 
 
 Finally, we interpret our results, discussing their implications and relevance to the field. We provide a clear takeaway message for the reader that summarizes the contribution of this micropublication.
 
+## Supplementary Methods
+
+... details ...
+
+## Supplementary Figure S1
+
+```{figure} ./images/s1.png
+:label: fig:s1
+:alt: Supplementary figure S1
+Supplementary figure S1 caption.
