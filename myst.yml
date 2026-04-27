@@ -4,9 +4,8 @@ extends:
 - https://raw.githubusercontent.com/impact-scholars/isp-actions-config/v0.1.0/isp-micropublication-2025.yml
 
 project:
-  # Uncomment and fill when published
   # doi: 10.5281/zenodo.XXXXXXX
-  # date: YYYY-MM-DD
+  # date: 2026-04-27
   authors:
   - name: Yang, Z.
     orcid: 0009-0006-7111-973X
@@ -39,6 +38,9 @@ project:
   - neural dynamics
   - mouse brain
   - multi-timescale
+  - brain-wide mapping
+  - temporal hierarchy
+  - multi-exponential modeling
   github: https://github.com/PinkFreud-2004/DecisiveTimesPublication
   bibliography:
   - bib.bib
