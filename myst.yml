@@ -8,62 +8,37 @@ project:
   # doi: 10.5281/zenodo.XXXXXXX
   # date: YYYY-MM-DD
   authors:
-  - name: Doe, J.
-    orcid: 0000-0000-0000-0001
+  - name: Yang, Z.
+    orcid: 0009-0006-7111-973X
     affiliations:
-    - Department of Geosciences and Natural Resource Management, University of Copenhagen, Denmark
-    roles:
-    - Conceptualization
-    - Formal analysis
-    - Investigation
-    - Methodology
-    - Software
-    - Visualization
-    - Writing - original draft
-    - Writing - review & editing
-  - name: Sharma, A.J.
-    orcid: 0000-0000-0000-0002
+    - Neuromatch Impact Scholars Program
+  - name: Bisani, V.
+    orcid: 0009-0001-2593-6580
     affiliations:
-    - Department of Earth Sciences, Indian Institute of Technology Bombay, Mumbai, India
-    roles:
-    - Formal analysis
-    - Investigation
-    - Writing - original draft
-    - Writing - review & editing
-  - name: Tanaka, S.
+    - Neuromatch Impact Scholars Program
+  - name: Gülenç, S.B.
+    orcid: 0009-0000-2009-5332
     affiliations:
-    - College of Urban and Environmental Sciences, Peking University, Beijing, China
-    roles:
-    - Formal analysis
-    - Writing - original draft
-    - Writing - review & editing
-  - name: Vera Gutierrez, C.
+    - Neuromatch Impact Scholars Program
+  - name: Stafford, K.
+    orcid: 0009-0000-9269-5249
     affiliations:
-    - Institute of Geology, Mining, and Metallurgy, Universidad Nacional Mayor de San Marcos, Lima, Peru
-    roles:
-    - Formal analysis
-    - Writing - original draft
-    - Writing - review & editing
-  - name: Ndlovu, T.
+    - Neuromatch Impact Scholars Program
+  - name: Manley, J.
+    orcid: 0000-0003-3505-8707
     affiliations:
-    - Marine Research and Development, Oceanic Dynamics Ltd., Cape Town, South Africa
-    roles:
-    - Formal analysis
-    - Writing - review & editing
+    - Neuromatch Impact Scholars Program
 
   toc:
   - file: index.md
 
-  id: isp-micropublication-template
-  title: This is the title of our awesome micropublication
+  id: isp-micropublication-decisive-times
+  title: A Brain-Wide Atlas of Intrinsic Neural Timescales in Mice
   keywords:
-  - keyword1
-  - keyword2
-  - keyword3
-  - keyword4
-  github: https://github.com/impact-scholars/isp-micropublication-template
+  - intrinsic timescale
+  - neural dynamics
+  - mouse brain
+  - multi-timescale
+  github: https://github.com/PinkFreud-2004/DecisiveTimesPublication
   bibliography:
   - bib.bib
-  # downloads:
-  # - file: supplementary-material.zip
-  #   title: Supplementary Material
