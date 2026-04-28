@@ -5,28 +5,76 @@ extends:
 
 project:
   # doi: 10.5281/zenodo.XXXXXXX
-  # date: 2026-04-27
+  date: 2026-04-27
   authors:
-  - name: Yang, Z.
-    orcid: 0009-0006-7111-973X
-    affiliations:
-    - Neuromatch Impact Scholars Program
-  - name: Bisani, V.
-    orcid: 0009-0001-2593-6580
-    affiliations:
-    - Neuromatch Impact Scholars Program
   - name: Gülenç, S.B.
     orcid: 0009-0000-2009-5332
     affiliations:
-    - Neuromatch Impact Scholars Program
+    - Yıldız Technical University
+    roles: 
+    - conceptualization
+    - data curation
+    - funding acquisition
+    - investigation
+    - methodology
+    - project administration
+    - software
+    - visualization
+    - writing - original draft
+    - writing - reviewing & editing
+
+
+
   - name: Stafford, K.
     orcid: 0009-0000-9269-5249
     affiliations:
-    - Neuromatch Impact Scholars Program
+    - University of New Brunswick
+    roles: 
+    - conceptualization
+    - data curation
+    - funding acquisition
+    - investigation
+    - project administration
+    - software
+    - validation
+    - visualization
+    - writing - original draft
+    - writing - reviewing & editing
+
+  - name: Yang, Z.
+    orcid: 0009-0006-7111-973X
+    affiliations:
+    - The Hong Kong University of Science and Technology
+    roles: 
+    - conceptualization
+    - data curation
+    - investigation 
+    - project administration
+    - software
+    - writing - original draft
+    - writing - reviewing & editing
+
+    name: Bisani, V.
+    orcid: 0009-0001-2593-6580
+    roles: 
+    - conceptualization
+    - data curation
+    - formal analysis
+    - project administration
+    - resources
+    - software
+    - writing - reviewing & editing
+
   - name: Manley, J.
     orcid: 0000-0003-3505-8707
-    affiliations:
-    - Neuromatch Impact Scholars Program
+    roles: 
+    - conceptualization
+    - methodology
+    - project administration
+    - supervision
+    - validation
+    - writing - reviewing & editing
+    
 
   toc:
   - file: index.md
@@ -36,10 +84,7 @@ project:
   keywords:
   - intrinsic timescale
   - neural dynamics
-  - mouse brain
-  - multi-timescale
   - brain-wide mapping
-  - temporal hierarchy
   - multi-exponential modeling
   github: https://github.com/PinkFreud-2004/DecisiveTimesPublication
   bibliography:
