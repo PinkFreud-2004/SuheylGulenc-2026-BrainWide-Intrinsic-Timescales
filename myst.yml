@@ -21,7 +21,7 @@ project:
     - software
     - visualization
     - writing - original draft
-    - writing - review and editing
+    - writing - review & editing
 
   - name: Stafford, K.
     orcid: 0009-0000-9269-5249
@@ -37,7 +37,7 @@ project:
     - validation
     - visualization
     - writing - original draft
-    - writing - review and editing
+    - writing - review & editing
 
   - name: Yang, Z.
     orcid: 0009-0006-7111-973X
@@ -50,7 +50,7 @@ project:
     - project administration
     - software
     - writing - original draft
-    - writing - review and editing
+    - writing - review & editing
 
   - name: Bisani, V.
     orcid: 0009-0001-2593-6580
@@ -61,7 +61,7 @@ project:
     - project administration
     - resources
     - software
-    - writing - review and editing
+    - writing - review & editing
 
   - name: Manley, J.
     orcid: 0000-0003-3505-8707
@@ -71,7 +71,7 @@ project:
     - project administration
     - supervision
     - validation
-    - writing - review and editing
+    - writing - review & editing
 
   toc:
   - file: index.md
