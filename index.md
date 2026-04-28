@@ -16,9 +16,8 @@ The IBL dataset is uniquely suited for this analysis: its brain-wide Neuropixels
 
 We analyzed spontaneous spiking activity from 580,598 units across 266 brain regions drawn from the IBL 2025 Brainwide Map Release (see Supplementary Methods for full quality criteria, iSTTC derivation, and model selection procedure).
 
-Restricting to regions with at least 15 recorded neurons (220 regions), median $\tau_\text{eff}$ spanned nearly two orders of magnitude, ranging from 37.9 ms in the paraventricular nucleus of the thalamus to 3,115 ms in the infracerebellar nucleus ([](#figure-main)C). Anatomical region accounted for a meaningful but modest share of timescale variance (cross-validated $R^2 = 0.206 \pm 0.003$), with the remaining ~79% reflecting variability within regions (median IQR = 588 ms per area). Notably, this is nearly an order of magnitude higher than the 2.5% reported by [@shi2025], who analyzed an earlier version of the IBL dataset with fewer sessions and neurons. The source of this discrepancy warrants further investigation.
 
-Despite this within-region heterogeneity, a clear anatomical gradient emerged when neurons were grouped by major division. The forebrain exhibited the shortest timescales (median $\tau_\text{eff}$ = 213 ms, IQR = 120-304 ms), while the midbrain and hindbrain showed markedly longer temporal persistence (765 ms, IQR = 482-968 ms and 956 ms, IQR = 723-1183 ms, respectively) ([](#figure-main)A). This rostro-caudal hierarchy is consistent with independent estimates reported by [@shi2025], providing cross-study validation of this gradient. This forebrain-to-hindbrain organisation was further reflected at the level of individual Beryl subdivisions, with hippocampal and cortical subplate regions anchoring the fast end and hindbrain nuclei clustering at the slow extreme ([](#figure-main)B; [@ibl_atlas]).
+Despite this within-region heterogeneity, a clear anatomical gradient emerged when neurons were grouped by major division. The forebrain exhibited the shortest timescales (median $\tau_\text{eff}$ = 213 ms, IQR = 120-304 ms), while the midbrain and hindbrain showed markedly longer temporal persistence (765 ms, IQR = 482-968 ms and 956 ms, IQR = 723-1183 ms, respectively) [Figure 1A](#figure-main). This rostro-caudal hierarchy is consistent with independent estimates reported by [@shi2025], providing cross-study validation of this gradient. This forebrain-to-hindbrain organisation was further reflected at the level of individual Beryl subdivisions, with hippocampal and cortical subplate regions anchoring the fast end and hindbrain nuclei clustering at the slow extreme ([Figure 1A](#figure-main); [@ibl_atlas]).
 
 ```{figure} figure.png
 :name: figure-main
@@ -28,7 +27,7 @@ Despite this within-region heterogeneity, a clear anatomical gradient emerged wh
 **Brain-wide map of intrinsic neural timescales across brain regions.** All panels except C exclude regions with fewer than 15 neurons (220 regions retained); C excludes regions with fewer than 5 neurons (244 regions retained). **(A)** Effective timescale distributions by major brain division (forebrain, midbrain, hindbrain); boxes show the interquartile range of region-level $\tau_\text{eff}$ medians, with whiskers extending to 1.5x IQR. **(B)** Timescale distributions across the 12 Beryl parcellation subdivisions, ordered from fastest to slowest median $\tau_\text{eff}$. **(C)** Brain-wide bar chart of median $\tau_\text{eff}$ per region; bars show median $\tau_\text{eff}$ and error bars indicate the interquartile range (Q1-Q3). Regions are grouped by major anatomical division, forebrain (top), midbrain (middle), and hindbrain (bottom), and ordered alphabetically within each subdivision. Colour denotes Allen Mouse Brain Atlas Beryl parcellation subdivision (CTX, isocortex; OLF, olfactory areas; HPF, hippocampal formation; CTXsp, cortical subplate; STR, striatum; PAL, pallidum; TH, thalamus; HY, hypothalamus; P, pons; MY, medulla; MB, midbrain; CB, cerebellum). **(D)** Coupled multiscale architecture of fast and slow timescale components. Each point represents one brain region (n = 220 regions with reliable two-component fits), plotted by its median fast timescale ($\tau_1$) against its median slow timescale ($\tau_2$) on log-log axes. Colors denote major division: forebrain, midbrain, and hindbrain. The dashed line shows the log-log regression fit (slope = 0.545, r = 0.766, p = 9.68x10^-44), indicating that regions with longer fast timescales also tend to have proportionally longer slow timescales.
 ```
 
-Many neurons were best described by multi-timescale models, raising the question of whether fast and slow components are independently organized or jointly constrained. We therefore examined how $\tau_2$ co-varies with $\tau_1$ across regions, restricting the analysis to neurons best described by exactly two components (60.4%). $\tau_2$ co-varied strongly with $\tau_1$ ($r = 0.78$, $p < 10^{-26}$; [](#figure-main)D), following a sublinear relationship (slope = 0.69), consistent with coordinated scaling of fast and slow dynamics across brain regions.
+Many neurons were best described by multi-timescale models, raising the question of whether fast and slow components are independently organized or jointly constrained. We therefore examined how $\tau_2$ co-varies with $\tau_1$ across regions, restricting the analysis to neurons best described by exactly two components (60.4%). $\tau_2$ co-varied strongly with $\tau_1$ ($r = 0.78$, $p < 10^{-26}$; [Figure 1A](#figure-main)), following a sublinear relationship (slope = 0.69), consistent with coordinated scaling of fast and slow dynamics across brain regions.
 
 ## Discussion
 
@@ -65,28 +64,28 @@ The optimal M was selected via the Bayesian Information Criterion (BIC), with th
 ## Supplementary Figures
 
 ```{figure} figures/figure_s1.png
-:name: figure-s1
+:name: supp-fig-1
 :align: center
 :alt: Distribution of the number of timescale components per neuron
 
-**Supplementary Figure 1: Distribution of the number of timescale components per neuron.**
+**Distribution of the number of timescale components per neuron.**
 The majority of well-fitted neurons were best described by two-timescale models (60.4%), followed by one-timescale (25.7%) and three-timescale (13.8%) models, with only 0.1% requiring four timescales. The optimal number of components was selected using the Bayesian information criterion (BIC), with the constraint that each component contributed at least 1% to the overall autocorrelation shape.
 ```
 
 ```{figure} figures/figure_s2.png
-:name: figure-s2
+:name: supp-fig-2
 :align: center
 :alt: Effective intrinsic timescale as a function of firing rate
 
-**Supplementary Figure 2: Effective intrinsic timescale as a function of firing rate.**
+**Effective intrinsic timescale as a function of firing rate.**
 Distribution of $\tau_\text{eff}$ across neurons grouped into firing rate bins (IQR shown as box height, median as horizontal line, log scale on both axes). Contrary to the expectation that high firing rates would trivially produce short timescales, no simple inverse relationship is observed: median $\tau_\text{eff}$ is lowest in the <1 Hz bin and rises across intermediate firing rates, with the highest median values in the 20–50 and >50 Hz bins. The broad IQR within each bin further indicates that firing rate is a poor predictor of $\tau_\text{eff}$ at the single-neuron level.
 ```
 
 ```{figure} figures/figure_s3.png
-:name: figure-s3
+:name: supp-fig-3
 :align: center
 :alt: Population distribution of effective intrinsic timescales
 
-**Supplementary Figure 3: Population distribution of effective intrinsic timescales.**
+**Population distribution of effective intrinsic timescales.**
 Histogram of $\tau_\text{eff}$ across all well-fitted neurons (log-scaled x-axis), revealing a broad, right-skewed distribution with a mode near 800 ms and a heavy tail extending beyond 1,000 ms.
 ```

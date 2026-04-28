@@ -72,7 +72,7 @@ project:
     - supervision
     - validation
     - writing - review & editing
-
+   
   toc:
   - file: index.md
 
