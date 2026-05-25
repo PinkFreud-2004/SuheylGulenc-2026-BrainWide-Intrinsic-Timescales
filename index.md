@@ -89,3 +89,4 @@ Distribution of $\tau_\text{eff}$ across neurons grouped into firing rate bins (
 **Population distribution of effective intrinsic timescales.**
 Histogram of $\tau_\text{eff}$ across all well-fitted neurons (log-scaled x-axis), revealing a broad, right-skewed distribution with a mode near 800 ms and a heavy tail extending beyond 1,000 ms.
 ```
+
