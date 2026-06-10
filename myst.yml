@@ -5,7 +5,7 @@ extends:
 
 project:
   # doi: 10.5281/zenodo.XXXXXXX
-  date: 2026-05-26
+  date: 2026-04-27
   authors:
   - name: Gülenç, S.B.
     orcid: 0009-0000-2009-5332
@@ -27,6 +27,8 @@ project:
     orcid: 0009-0000-9269-5249
     affiliations:
     - University of New Brunswick
+    corresponding: true
+    email: kayla.staffordd@gmail.com
     roles: 
     - conceptualization
     - data curation
@@ -61,6 +63,7 @@ project:
     - project administration
     - resources
     - software
+    - visualization
     - writing - review & editing
 
   - name: Manley, J.
@@ -76,15 +79,18 @@ project:
   toc:
   - file: index.md
 
+  numbering:
+    figures: false
+
   id: isp-micropublication-decisive-times
   title: A Brain-Wide Atlas of Intrinsic Neural Timescales in Mice
   abstract: |
-    Understanding how the brain integrates information requires a shift from localized functional studies to mapping a brain-wide temporal architecture. Intrinsic neural timescales (ITs), defined as the decay time constant of a neuron's spontaneous spiking autocorrelation, provide a quantitative proxy for how long a local circuit retains information about its recent activity. Yet their accurate estimation has historically been limited by computational biases in spike train analysis and the oversimplified assumption that each neuron operates on a single characteristic timescale. In this study, we address these limitations by applying a hybrid framework combining the unbinned intrinsic Spike Time Tiling Coefficient (iSTTC) autocorrelation estimator with Bayesian Information Criterion (BIC)-guided multi-exponential modeling to 89,047 single units across 266 mouse brain regions. We confirm a rostro-caudal timescale gradient, with the median effective timescale approximately 4.5-fold longer in the hindbrain (956 ms) than in the forebrain (213 ms), consistent with recent brain-wide mapping efforts. We further demonstrate that 73.9% of neurons are better described by multi-component models, and find that fast and slow dynamical modes co-vary sublinearly across regions. These findings lay the groundwork for future analyses linking single-neuron dynamics to the emergence of stable, population-level representations required for decision making and adaptive behavior.
+    Understanding how the brain integrates information requires a shift from localized functional studies to mapping a brain-wide temporal architecture. Intrinsic neural timescales (ITs), defined as the decay time constant of a neuron's spontaneous spiking autocorrelation, provide a quantitative proxy for how long a local circuit retains information about its recent activity. Yet their accurate estimation has historically been limited by computational biases in spike train analysis and the oversimplified assumption that each neuron operates on a single characteristic timescale. In this study, we address these limitations by applying a hybrid framework combining the unbinned intrinsic Spike Time Tiling Coefficient (iSTTC) autocorrelation estimator with Bayesian Information Criterion (BIC)-guided multi-exponential modeling to 89,047 single units across 266 mouse brain regions. We reveal a robust rostro-caudal hierarchy of intrinsic neural timescales across 220 mouse brain regions, with median effective timescales approximately 4.5-fold longer in the hindbrain (956 ms) than in the forebrain (213 ms), establishing anatomical location as a key determinant of a neuron's temporal integration window. We further demonstrate that 73.9% of neurons are better described by multi-component models, and find that fast ($\tau_1$) and slow ($\tau_2$) dynamical modes co-vary sublinearly across regions. These findings lay the groundwork for future analyses linking single-neuron dynamics to the emergence of stable, population-level representations required for decision making and adaptive behavior.
   keywords:
-  - intrinsic timescale
-  - neural dynamics
-  - brain-wide mapping
-  - multi-exponential modeling
+  - Intrinsic Timescales
+  - Neural Dynamics
+  - Brain-Wide Mapping
+  - Multi-Exponential Modeling
   github: https://github.com/PinkFreud-2004/DecisiveTimesPublication
   bibliography:
   - bib.bib
