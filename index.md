@@ -19,7 +19,7 @@ The IBL dataset is uniquely suited for this analysis: its brain-wide Neuropixels
  
 ## Methods
  
-We analyzed 580,598 units from the IBL 2025 Brainwide Map Release {cite}`ibl2025` during 5–10-minute spontaneous epochs. Units with ≥100 spikes, declining autocorrelations, and fit $R^2$ ≥ 0.5 were retained (89,047 units, 15.34%). Brain regions were grouped using the Beryl parcellation, a brain-wide region atlas developed by the International Brain Laboratory {cite}`ibl_atlas`, into major divisions (forebrain, midbrain, hindbrain), 12 subdivisions, and 266 individual regions (220 with ≥15 neurons analyzed).
+We analyzed 580,598 units from the IBL 2025 Brainwide Map Release {cite}`ibl2025` during 5–10-minute spontaneous epochs. Units with ≥100 spikes, declining autocorrelations, and fit $R^2$ ≥ 0.5 were retained (89,047 units, 15.34%). Brain regions were grouped using the Beryl parcellation — a brain-wide region atlas developed by the International Brain Laboratory {cite}`ibl_atlas` — into major divisions (forebrain, midbrain, hindbrain), 12 subdivisions, and 266 individual regions (220 with ≥15 neurons analyzed).
  
 Timescales were estimated using iSTTC, an unbinned autocorrelation estimator operating on exact spike times {cite}`pochinok2026`, avoiding biases in low-firing-rate neurons. Unlike binned ACF methods, iSTTC estimates are insensitive to bin size and epoching artifacts ([Supplementary Figure 1](#supp-fig-1)). Each autocorrelation was fitted with 1–4 exponential components:
  
@@ -128,27 +128,27 @@ where $k = 2M$ ($M$ amplitudes and $M$ time constants), $n$ is the number of lag
 ```{figure} figures/figure_s3.png
 :label: supp-fig-3
 :align: center
-:alt: Population distribution of effective intrinsic timescales
+:alt: Effective intrinsic timescale as a function of firing rate
 ```
- 
-**Supplementary Figure 3: Population distribution of effective intrinsic timescales.** Histogram of $\tau_\text{eff}$ across all well-fitted neurons (log-scaled x-axis), revealing a broad, right-skewed distribution with a mode near 800 ms and a heavy tail extending beyond 1,000 ms.
+
+**Supplementary Figure 3: Effective intrinsic timescale as a function of firing rate.** Distribution of $\tau_\text{eff}$ across neurons grouped into firing rate bins (IQR shown as box height, median as horizontal line, log scale on both axes). Contrary to the expectation that high firing rates would trivially produce short timescales, no simple inverse relationship is observed: median $\tau_\text{eff}$ is lowest in the <1 Hz bin and rises across intermediate firing rates, with the highest median values in the 20–50 and >50 Hz bins. The broad IQR within each bin further indicates that firing rate is a poor predictor of $\tau_\text{eff}$ at the single-neuron level.
  
 ```{figure} figures/figure_s4.png
 :label: supp-fig-4
 :align: center
-:alt: Effective intrinsic timescale as a function of firing rate
+:alt: Distribution of the number of timescale components per neuron
 ```
- 
-**Supplementary Figure 4: Effective intrinsic timescale as a function of firing rate.** Distribution of $\tau_\text{eff}$ across neurons grouped into firing rate bins (IQR shown as box height, median as horizontal line, log scale on both axes). Contrary to the expectation that high firing rates would trivially produce short timescales, no simple inverse relationship is observed: median $\tau_\text{eff}$ is lowest in the <1 Hz bin and rises across intermediate firing rates, with the highest median values in the 20–50 and >50 Hz bins. The broad IQR within each bin further indicates that firing rate is a poor predictor of $\tau_\text{eff}$ at the single-neuron level.
+
+**Supplementary Figure 4: Distribution of the number of timescale components per neuron.** The majority of well-fitted neurons were best described by two-timescale models (60.4%), followed by one-timescale (25.7%) and three-timescale (13.8%) models, with only 0.1% requiring four timescales. The optimal number of components was selected using the Bayesian information criterion (BIC), with the constraint that each component contributed at least 1% to the overall autocorrelation shape.
  
 ```{figure} figures/figure_s5.png
 :label: supp-fig-5
 :align: center
-:alt: Distribution of the number of timescale components per neuron
+:alt: Population distribution of effective intrinsic timescales
 ```
  
-**Supplementary Figure 5: Distribution of the number of timescale components per neuron.** The majority of well-fitted neurons were best described by two-timescale models (60.4%), followed by one-timescale (25.7%) and three-timescale (13.8%) models, with only 0.1% requiring four timescales. The optimal number of components was selected using the Bayesian information criterion (BIC), with the constraint that each component contributed at least 1% to the overall autocorrelation shape.
- 
+**Supplementary Figure 5: Population distribution of effective intrinsic timescales.** Histogram of $\tau_\text{eff}$ across all well-fitted neurons (log-scaled x-axis), revealing a broad, right-skewed distribution with a mode near 800 ms and a heavy tail extending beyond 1,000 ms.
+
 ---
 
 (supp-table-1)=
